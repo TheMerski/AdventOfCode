@@ -8,7 +8,8 @@ namespace AOC2020.Helpers
     /// <summary>
     /// Class for reading information from files
     /// </summary>
-    static class FileReader
+
+    static class ResourceReader
     {
         /// <summary>
         /// Read a file into an array of integers
@@ -16,9 +17,9 @@ namespace AOC2020.Helpers
         /// <param name="filePath">Path of the file to read</param>
         /// <param name="seperator">Seperator used to seperate numbers (default = ,)</param>
         /// <returns>An array of numbers</returns>
-        public static int[] readFileToIntArray(string filePath, char seperator = ',')
+        public static int[] readResourceToIntArray(string resource, string seperator = ",")
         {
-            string text = File.ReadAllText(filePath);
+            string text = resource;
             string[] numbers = text.Split(seperator);
             return Array.ConvertAll(numbers, int.Parse);
         }

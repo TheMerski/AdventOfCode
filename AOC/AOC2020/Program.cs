@@ -10,7 +10,7 @@ namespace AOC2020
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            new Day1();
         }
 
 
