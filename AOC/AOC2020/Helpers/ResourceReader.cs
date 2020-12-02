@@ -13,15 +13,40 @@ namespace AOC2020.Helpers
     {
         /// <summary>
         /// Read a file into an array of integers
-        /// </summary>
+        /// </summary>W
         /// <param name="filePath">Path of the file to read</param>
         /// <param name="seperator">Seperator used to seperate numbers (default = ,)</param>
         /// <returns>An array of numbers</returns>
-        public static int[] readResourceToIntArray(string resource, string seperator = ",")
+        public static int[] ReadResourceToIntArray(string resource, string seperator =",")
         {
             string text = resource;
             string[] numbers = text.Split(seperator);
             return Array.ConvertAll(numbers, int.Parse);
+        }
+
+        /// <summary>
+        /// Read a file into an array of integers
+        /// </summary>
+        /// <param name="filePath">Path of the file to read</param>
+        /// <param name="seperator">Seperator used to seperate numbers (default = ,)</param>
+        /// <returns>An array of numbers</returns>
+        public static int[] ReadResourceToIntArray(string resource, char seperator = ',')
+        {
+            string text = resource;
+            string[] numbers = text.Split(seperator);
+            return Array.ConvertAll(numbers, int.Parse);
+        }
+
+        /// <summary>
+        /// Read a file into an array of strings
+        /// </summary>W
+        /// <param name="filePath">Path of the file to read</param>
+        /// <param name="seperator">Seperator used to seperate numbers (default = ,)</param>
+        /// <returns>An array of strings</returns>
+        public static string[] ReadResourceToStringArray(string resource, string seperator = ",")
+        {
+            string text = resource;
+            return text.Split(seperator);
         }
 
     }

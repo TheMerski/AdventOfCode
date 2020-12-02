@@ -13,7 +13,7 @@ namespace AOC2020
         public Day1()
         {
             timeHelper = new TimeHelper();
-            input = ResourceReader.readResourceToIntArray(Properties.Resources.Day1, Environment.NewLine);
+            input = ResourceReader.ReadResourceToIntArray(Properties.Resources.Day1, Environment.NewLine);
             Array.Sort(input);
             timeHelper.Start();
             Console.WriteLine(findMulOfThreeEntriesForSum(2020).ToString());
