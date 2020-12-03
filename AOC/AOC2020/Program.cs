@@ -10,7 +10,7 @@ namespace AOC2020
 
         static void Main(string[] args)
         {
-            new Day2();
+            new Day3();
         }
 
 
