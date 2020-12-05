@@ -246,5 +246,56 @@ namespace AOC2020.Properties {
                 return ResourceManager.GetString("Day4", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FBFBFBFRRL
+        ///BFBBFFFRRL
+        ///FFBFFFFRLL
+        ///BFFFBBBRLL
+        ///BBFFBFBLLR
+        ///FFFFBBBRLR
+        ///FBBBBFFLRR
+        ///FBFFFBFRLL
+        ///FFFFBFFRRR
+        ///FFFBBFFRLR
+        ///BFBBBBFRLL
+        ///FBBFBFFLLL
+        ///FFFBFFBRRL
+        ///BFBFFBBLLL
+        ///FFBBFBBLLR
+        ///FFBFFBBRRL
+        ///BFBFBBBRRL
+        ///FFBFFBBLLL
+        ///BFFFBBBLRR
+        ///BFBFFBFRRR
+        ///BFFBFFBRRL
+        ///BFBFFFFLLR
+        ///FFFFBBBLRR
+        ///FFBBFBFRRR
+        ///BFFFBFBLLL
+        ///FBFFBBBRRL
+        ///FBBBBBBRRL
+        ///BBFBFFBLLL
+        ///BFFBFFFLLL
+        ///FBFFBBFLLR
+        ///FBFBFFBLRL
+        ///FFBFFFBRLR
+        ///FFBBBBFRLL
+        ///FBFBFFFLRL
+        ///FBBFBBFRLR
+        ///FFBBBBBLLL
+        ///FBFFBFBLLL
+        ///FBFFFBBRRR
+        ///BBFFBBFRRR
+        ///FBFFBFBRLL
+        ///FBBBFBBRRR
+        ///BFFFBFFRRL
+        ///FFBFBFBL [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day5 {
+            get {
+                return ResourceManager.GetString("Day5", resourceCulture);
+            }
+        }
     }
 }
