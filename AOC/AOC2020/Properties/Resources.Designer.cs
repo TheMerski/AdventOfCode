@@ -297,5 +297,63 @@ namespace AOC2020.Properties {
                 return ResourceManager.GetString("Day5", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to jmqnkzlsfedaptx
+        ///usjfkadqwmeyilph
+        ///
+        ///lodbmhvcaset
+        ///wcognbeaxhmvdt
+        ///
+        ///f
+        ///f
+        ///f
+        ///f
+        ///
+        ///dwxfircztpyshol
+        ///dogfryaxtlhzscw
+        ///gwchdzyftolsxra
+        ///thrdwcxfosqzyl
+        ///rholzdwctxfsy
+        ///
+        ///dbifho
+        ///zmdh
+        ///hobd
+        ///
+        ///iqjdvpxyfremnbzuohglc
+        ///dpohfyzjqicbnegrmuxvl
+        ///uromlgbqyjznecvpxhidf
+        ///cyebghlzpoiqmrjfxnudv
+        ///vjgzlpbfondxrceyhqimu
+        ///
+        ///mpxsao
+        ///oxasmp
+        ///rzxqokamp
+        ///
+        ///bigjutwl
+        ///
+        ///rdcwfenzhlos
+        ///gzorslxh
+        ///marjhzqbipoukvls
+        ///
+        ///fdclagjkvrmwxqyszupnoethbi
+        ///zdiyfcuahnkxewltsgqrpbj
+        ///derbpujchxlqfngtaskzwyi
+        ///
+        ///gyx
+        ///yg
+        ///gx
+        ///fgver
+        ///
+        ///nb
+        ///bo
+        ///
+        ///efruscbgi [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day6 {
+            get {
+                return ResourceManager.GetString("Day6", resourceCulture);
+            }
+        }
     }
 }
