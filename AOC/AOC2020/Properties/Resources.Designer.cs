@@ -355,5 +355,22 @@ namespace AOC2020.Properties {
                 return ResourceManager.GetString("Day6", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to dim silver bags contain 3 posh fuchsia bags.
+        ///wavy olive bags contain 1 striped olive bag, 1 dull cyan bag.
+        ///dull coral bags contain 1 dim olive bag, 5 muted violet bags, 2 dark gray bags.
+        ///bright olive bags contain 3 light indigo bags, 3 dark coral bags.
+        ///clear lavender bags contain 1 dark olive bag.
+        ///dim lime bags contain 3 dotted red bags.
+        ///drab indigo bags contain 5 striped coral bags, 2 muted bronze bags.
+        ///striped orange bags contain 5 wavy fuchsia bags, 5 clear red bags, 3 plaid red bags.
+        ///dotted indi [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day7 {
+            get {
+                return ResourceManager.GetString("Day7", resourceCulture);
+            }
+        }
     }
 }
