@@ -372,5 +372,69 @@ namespace AOC2020.Properties {
                 return ResourceManager.GetString("Day7", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to jmp +248
+        ///acc +11
+        ///acc +50
+        ///acc +44
+        ///jmp +531
+        ///acc -17
+        ///jmp +572
+        ///acc +19
+        ///acc +9
+        ///jmp +221
+        ///nop +373
+        ///acc +7
+        ///jmp +502
+        ///acc +39
+        ///jmp +12
+        ///acc +7
+        ///nop +482
+        ///jmp +144
+        ///acc -4
+        ///jmp +85
+        ///acc +12
+        ///nop +446
+        ///nop +162
+        ///jmp +270
+        ///acc -19
+        ///jmp +402
+        ///acc +8
+        ///acc +28
+        ///acc -13
+        ///acc +30
+        ///jmp +81
+        ///acc -15
+        ///jmp +20
+        ///acc +28
+        ///jmp -19
+        ///nop +190
+        ///acc +2
+        ///jmp +61
+        ///nop +237
+        ///jmp +421
+        ///acc +24
+        ///jmp +221
+        ///acc +1
+        ///jmp +1
+        ///jmp +265
+        ///nop +94
+        ///jmp +1
+        ///jmp +370
+        ///acc +19
+        ///nop +39
+        ///jmp +454
+        ///jmp +162
+        ///jmp +196
+        ///jmp +7
+        ///acc +37
+        ///acc +1 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day8 {
+            get {
+                return ResourceManager.GetString("Day8", resourceCulture);
+            }
+        }
     }
 }

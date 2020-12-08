@@ -1,4 +1,4 @@
-﻿using AOC2020.Helpers;
+﻿using AOC2020.Solutions;
 using System;
 using System.Diagnostics;
 
@@ -10,8 +10,8 @@ namespace AOC2020
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Day 7");
-            new Day7();
+            Console.WriteLine("Day 8");
+            new Day8();
         }
 
 
