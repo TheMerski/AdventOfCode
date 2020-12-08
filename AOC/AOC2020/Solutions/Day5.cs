@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 
-namespace AOC2020
+namespace AOC2020.Solutions
 {
     class Day5
     {
