@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace AOC2020.Helpers
@@ -30,6 +31,21 @@ namespace AOC2020.Helpers
             }
 
             return null;
+        }
+
+        /// <summary>
+        /// Create a new array from a subset of the input array
+        /// </summary>
+        /// <typeparam name="T">Array Type</typeparam>
+        /// <param name="array">input array</param>
+        /// <param name="offset">offset</param>
+        /// <param name="length">length of new array</param>
+        /// <returns></returns>
+        public static T[] SubArray<T>(this T[] array, int offset, int length)
+        {
+            return array.Skip(offset)
+                        .Take(length)
+                        .ToArray();
         }
     }
 }

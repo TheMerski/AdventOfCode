@@ -10,8 +10,8 @@ namespace AOC2020
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Day 8");
-            new Day8();
+            Console.WriteLine("Day 9");
+            new Day9();
         }
 
 

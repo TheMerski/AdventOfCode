@@ -38,6 +38,32 @@ namespace AOC2020.Helpers
         }
 
         /// <summary>
+        /// Read a file into an array of longs
+        /// </summary>W
+        /// <param name="filePath">Path of the file to read</param>
+        /// <param name="seperator">Seperator used to seperate numbers (default = ,)</param>
+        /// <returns>An array of numbers</returns>
+        public static long[] ReadResourceToLongArray(string resource, string seperator =",")
+        {
+            string text = resource;
+            string[] numbers = text.Split(seperator);
+            return Array.ConvertAll(numbers, Int64.Parse);
+        }
+
+        /// <summary>
+        /// Read a file into an array of longs
+        /// </summary>
+        /// <param name="filePath">Path of the file to read</param>
+        /// <param name="seperator">Seperator used to seperate numbers (default = ,)</param>
+        /// <returns>An array of numbers</returns>
+        public static long[] ReadResourceToLongArray(string resource, char seperator = ',')
+        {
+            string text = resource;
+            string[] numbers = text.Split(seperator);
+            return Array.ConvertAll(numbers, Int64.Parse);
+        }
+
+        /// <summary>
         /// Read a file into an array of strings
         /// </summary>W
         /// <param name="filePath">Path of the file to read</param>
