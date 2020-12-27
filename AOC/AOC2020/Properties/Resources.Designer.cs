@@ -275,41 +275,53 @@ namespace AOC2020.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 28
-        ///33
-        ///18
-        ///42
-        ///31
-        ///14
-        ///46
-        ///20
-        ///48
-        ///47
-        ///24
-        ///23
-        ///49
-        ///45
-        ///19
-        ///38
-        ///39
-        ///11
-        ///1
-        ///32
-        ///25
-        ///35
-        ///8
-        ///17
-        ///7
-        ///9
-        ///4
-        ///2
-        ///34
+        ///   Looks up a localized string similar to 16
         ///10
-        ///3.
+        ///15
+        ///5
+        ///1
+        ///11
+        ///7
+        ///19
+        ///6
+        ///12
+        ///4.
         /// </summary>
         internal static string Day10Test {
             get {
                 return ResourceManager.GetString("Day10Test", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LLLLLL.LL.LLLLLL.LLLLLLL.LLLLLL.LLLLL.LLLLLLLLLLLLLLLLLL.LLLL.L.LLL.LLLLLLLL.LLLLLLLL.LLLLL
+        ///LLLLLL.L.LL.LLLL.L.LLLL.LLLLLLL.LLLLL.LLLLLLLL.LLLLLL.LLLLLLL.LLLLLLLLLLLLLL.LLLLLLLL.LLLLL
+        ///LLLLLL.LLLL.LLLL.LLLLLLLLLLLLLL.LLLLL.LLLL.LLLLLLLLLLL.L.LLLL.LLLLL.LLL..LLL.LLLLLLLLLLLLLL
+        ///LLLLLL.LLLL.LLLLLLLLLL.L.LLLLLLLLLLLLLLLLLLL.L.LLLLLLL.L.L.LL.LLLLL..LLLLLLL.LLLLLLLL.LL.LL
+        ///LLLLLL.LLLL.LLLL.LLLLLLLLLLLLL..LLLLLLLLLLLLLL.LLLL.LL.LLLLLL.LLLLL.LLL.LLLL.LLLLLLLL.LLLLL
+        ///LLLL.L.LLLLLLLLLLLLLLLLLLLLLLLL.LLLLL.LLLLLLLL. [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day11 {
+            get {
+                return ResourceManager.GetString("Day11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to L.LL.LL.LL
+        ///LLLLLLL.LL
+        ///L.L.L..L..
+        ///LLLL.LL.LL
+        ///L.LL.LL.LL
+        ///L.LLLLL.LL
+        ///..L.L.....
+        ///LLLLLLLLLL
+        ///L.LLLLLL.L
+        ///L.LLLLL.LL.
+        /// </summary>
+        internal static string Day11Test {
+            get {
+                return ResourceManager.GetString("Day11Test", resourceCulture);
             }
         }
         
