@@ -6,54 +6,57 @@ namespace AOC2021.Solutions
 {
     public class Day1 : AdventBase
     {
-        private int[] input;
+        private long[] input;
 
         public Day1() : base("Day1.txt")
         {
-            this.input = RawInput.ToIntArray(Environment.NewLine);
+            this.input = RawInput.ToLongArray(Environment.NewLine);
         }
 
         protected override Task<string> ExecutePart1()
         {
-            Array.Sort(input);
-            return Task.FromResult(findMulOfTwoEntriesForSum(2020).ToString());
+            return Task.FromResult(FindDepthIncreases().ToString());
         }
 
         protected override Task<string> ExecutePart2()
         {
-            Array.Sort(input);
-            return Task.FromResult(findMulOfThreeEntriesForSum(2020).ToString());
+            return Task.FromResult(FindDepthIncreasesWindow(3).ToString());
         }
 
-        private int findMulOfThreeEntriesForSum(int sum)
+        private long FindDepthIncreases()
         {
-            foreach (int a in input)
+            var increases = 0;
+            for (int i = 1; i < input.Length; i++)
             {
-                foreach (int b in input)
+                if (input[i] > input[i - 1])
                 {
-                    foreach (int c in input)
-                    {
-                        int result = a + b + c;
-                        if (result == sum) return a * b * c;
-                        else if (result > sum) continue;
-                    }
+                    increases++;
                 }
             }
-            return 0;
+            return increases;
         }
 
-        private int findMulOfTwoEntriesForSum(int sum)
+        private long FindDepthIncreasesWindow(int windowLength)
         {
-            foreach (int a in input)
+            var increases = 0;
+            for (int i = 1; i < input.Length; i++)
             {
-                foreach (int b in input)
+                if (GetWindowSum(i, windowLength) > GetWindowSum(i - 1, windowLength))
                 {
-                    int result = a + b;
-                    if (result == sum) return a * b;
-                    else if (result > sum) continue;
+                    increases++;
                 }
             }
-            return 0;
+            return increases;
+        }
+
+        private long GetWindowSum(int index, int length)
+        {
+            long sum = 0;
+            for (int i = index; i < index + length && i < input.Length; i++)
+            {
+                sum += input[i];
+            }
+            return sum;
         }
     }
 }
