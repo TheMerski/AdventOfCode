@@ -36,8 +36,7 @@ public class Day3 : AdventBase
 
         if (coStr == null || oxygenStr == null)
         {
-            Console.WriteLine("PART 2 err");
-            throw new Exception("part2 err");
+            throw new Exception("I fucked up");
         }
         return (oxygenStr, coStr);
     }
