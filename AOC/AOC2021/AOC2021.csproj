@@ -22,6 +22,7 @@
     <None Remove="Solutions\" />
     <None Remove="Input\Day1.txt" />
     <None Remove="Input\Day2.txt" />
+    <None Remove="Input\Day3.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Input\" />
@@ -32,6 +33,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Input\Day2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Input\Day3.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

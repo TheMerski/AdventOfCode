@@ -30,9 +30,9 @@ namespace AOCHelpers
                 Console.WriteLine("Result part 2:");
                 Console.WriteLine(result2);
                 Console.WriteLine();
-            } catch
+            } catch (Exception e)
             {
-                Console.WriteLine("Part 2 not available");
+                Console.WriteLine($"Part 2 not available: {e.Message}");
             }
 
             this.timeHelper.Stop();
