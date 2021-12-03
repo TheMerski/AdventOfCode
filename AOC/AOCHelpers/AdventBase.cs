@@ -16,7 +16,7 @@ namespace AOCHelpers
         /// <summary>
         /// Execute the logic and print the result to the console.
         /// </summary>
-        public async void ConsoleStart(bool executePart2 = false)
+        public async void ConsoleStart()
         {
             this.timeHelper.Start();
             var result = await this.ExecutePart1();
@@ -24,12 +24,15 @@ namespace AOCHelpers
             Console.WriteLine(result);
             Console.WriteLine();
 
-            if (executePart2)
+            try
             {
                 var result2 = await this.ExecutePart2();
                 Console.WriteLine("Result part 2:");
                 Console.WriteLine(result2);
                 Console.WriteLine();
+            } catch
+            {
+                Console.WriteLine("Part 2 not available");
             }
 
             this.timeHelper.Stop();

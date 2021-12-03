@@ -82,4 +82,28 @@ public static class StringExtensions
         return text.Split(seperator);
     }
 
+    /// <summary>
+    /// Read a file into an list of strings
+    /// </summary>
+    /// <param name="filePath">Path of the file to read</param>
+    /// <param name="seperator">Seperator used to seperate numbers (default = ,)</param>
+    /// <returns>An list of strings</returns>
+    public static List<string> ToStringList(this string resource, string seperator = ",")
+    {
+        string text = resource;
+        return text.Split(seperator).ToList();
+    }
+
+    /// <summary>
+    /// Read a file into an list of strings
+    /// </summary>
+    /// <param name="filePath">Path of the file to read</param>
+    /// <param name="seperator">Seperator used to seperate numbers (default = ,)</param>
+    /// <returns>An list of strings</returns>
+    public static List<string> ToStringList(this string resource, char seperator = ',')
+    {
+        string text = resource;
+        return text.Split(seperator).ToList();
+    }
+
 }
