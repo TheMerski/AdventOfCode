@@ -6,11 +6,13 @@ namespace AOCHelpers
     {
         private readonly TimeHelper timeHelper;
         protected string RawInput { get; set; } = "";
+        protected List<string> InputLines { get; set; }
 
         public AdventBase(string inputFile)
         {
             this.timeHelper = new TimeHelper();
             this.RawInput = File.ReadAllText($"Input/{inputFile}");
+            this.InputLines = RawInput.ToStringList(Environment.NewLine);
         }
 
         /// <summary>
