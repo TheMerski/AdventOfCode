@@ -14,43 +14,28 @@ public class Day5 : AdventBase
     protected override Task<string> ExecutePart1()
     {
         var straightLines = lines.Where(l => l.IsStraight).ToList();
-        List<List<int>> lineCovers = InitializeBoard(straightLines);
-        lineCovers = CoverPoints(lineCovers, straightLines);
-        var intersections = lineCovers.Sum(l => l.Where(c => c >= 2).Count());
+        Dictionary<Point, int> points = new Dictionary<Point, int>();
+        points = CoverPoints(points, straightLines);
+        var intersections = points.Count(p => p.Value > 1);
         return Task.FromResult($"intersections: {intersections}");
     }
 
     protected override Task<string> ExecutePart2()
     {
-        List<List<int>> lineCovers = InitializeBoard(this.lines);
-        lineCovers = CoverPoints(lineCovers, this.lines);
-        var intersections = lineCovers.Sum(l => l.Where(c => c >= 2).Count());
+        Dictionary<Point, int> points = new Dictionary<Point, int>();
+        points = CoverPoints(points, this.lines);
+        var intersections = points.Count(p => p.Value > 1);
         return Task.FromResult($"intersections: {intersections}");
     }
 
-    private List<List<int>> InitializeBoard(List<Line> lines)
-    {
-        var maxX = lines.Max(l => l.Start.X < l.End.X ? l.End.X : l.Start.X) + 1;
-        var maxY = lines.Max(l => l.Start.Y < l.End.Y ? l.End.Y : l.Start.Y) + 1;
-        List<List<int>> board = new List<List<int>>();
-        for (int i = 0; i < maxY; i++)
-        {
-            board.Add(new List<int>(new int[maxX]));
-        }
-        return board;
-    }
-
-    private List<List<int>> CoverPoints(List<List<int>> coverage, List<Line> lines)
+    private Dictionary<Point, int> CoverPoints(Dictionary<Point, int> coverage, List<Line> lines)
     {
         foreach (var line in lines)
         {
-            var location = new Point(line.Start.X, line.Start.Y);
-            while (location != line.End)
+            foreach(var point in line.Points)
             {
-                coverage[location.Y][location.X] += 1;
-                location = location.MoveTowards(line.End);
+                coverage[point] = coverage.ContainsKey(point) ? coverage[point] + 1 : 1;
             }
-            coverage[line.End.Y][line.End.X] += 1;
         }
         return coverage;
     }
@@ -75,6 +60,11 @@ internal class Line
     public bool IsVertical
     {
         get { return Start.X == End.X; }
+    }
+
+    public List<Point> Points
+    {
+        get { return Start.PointsBetween(End); }
     }
 
     public Line(string input)

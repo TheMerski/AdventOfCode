@@ -20,4 +20,19 @@ public static class PointExtensions
         }
         return new Point(newX, newY);
     }
+
+    public static List<Point> PointsBetween(this Point location, Point target)
+    {
+        var points = new List<Point> { location };
+        
+        var dX = location.X == target.X ? 0 : location.X < target.X ? 1 : -1;
+        var dY = location.Y == target.Y ? 0 : location.Y < target.Y ? 1 : -1;
+
+        while (points.Last() != target)
+        {
+            points.Add(new Point(points.Last().X + dX, points.Last().Y + dY));
+        }
+
+        return points;
+    }
 }
