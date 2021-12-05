@@ -26,10 +26,6 @@
     <None Remove="Input\Day4.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Input\" />
-    <Folder Include="Solutions\" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Input\Day1.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -45,6 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Update="Input\Day4.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Input\Day5.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

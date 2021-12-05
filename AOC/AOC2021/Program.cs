@@ -1,5 +1,5 @@
 ﻿using AOC2021.Solutions;
 
-var prog = new Day4();
+var prog = new Day5();
 Console.WriteLine(Directory.GetCurrentDirectory());
 prog.ConsoleStart();
